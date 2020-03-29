@@ -1,0 +1,11 @@
+{
+  "name": "understanding-typescript",
+  "version": "1.0.0",
+  "main": "app.js",
+  "repository": "git@github.com:e3duardo/UnderstandingTypeScript.git",
+  "author": "Eduardo Santos <e3duardo@live.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "lite-server"
+  }
+}
