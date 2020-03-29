@@ -6,6 +6,7 @@
   "author": "Eduardo Santos <e3duardo@live.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "lite-server"
+    "dev": "lite-server",
+    "tsc": "tsc -w"
   }
 }
