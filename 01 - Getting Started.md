@@ -2,9 +2,9 @@
 
 ## Getting Started
 
-TypeScript is a JavaScript superset, is not a new language, just add news features and advantages to JavaScript. It is like babel, I can use modern features and they will be compilated down to olders browsers, and it adds new features like interfaces or generics
+TypeScript is a JavaScript superset, is not a new language, just add news features and advantages to JavaScript. It is like babel, I can use modern features and they will be compilated down to older browsers, and it adds new features like interfaces or generics
 
-Browser can't execute TypeScript directly, it has to be compilated to normal JavaScript first.
+The browser can't execute TypeScript directly, it has to be compilated to normal JavaScript first.
 
 ```
     $ npm install -g typescript
@@ -66,7 +66,7 @@ const person: {
   age: 29
 };
 
-// we don't need to do this because TypeScript infer the types
+// we don't need to do this because TypeScript infers the types
 // at compilation time, then the code below should be enough
 const person = {
   name: "Eduardo Santos",
@@ -74,14 +74,14 @@ const person = {
 };
 ```
 
-TypeScript always infer the type at the first declarion of a variable, like this:
+TypeScript always infers the type at the first declaration of a variable, like this:
 
 ```typescript
 // the variable name always has to be a string
 let name = "Eduardo Santos";
 // if we specify another type,
 name = 19;
-// are throw us an error
+// are thrown us an error
 ```
 
 ### Enum Type
@@ -111,8 +111,8 @@ Declare a specific value of a variable of a core type, for example:
 
 ```typescript
 const age: 30;
-// the type shold be "30" or "number"
-// this is literal type
+// the type should be "30" or "number"
+// this is a literal type
 ```
 
 We can combine literal type with union types like this:
@@ -144,7 +144,7 @@ function (n1:number, n2:number):number {
 // return type, cause compiler can infer itself
 ```
 
-**Void Type:** Functions could not return a value, when it's happens, we can tell that function return void. JavaScript does not recognised void like a type but TypeScript does.
+**Void Type:** Functions could not return a value, when it's happened, we can tell that function return void. JavaScript does not recognise void like a type but TypeScript does.
 
 **Function types:** We can declare a function type to ours variables:
 
@@ -155,25 +155,25 @@ combine = add;
 combine(1, 1);
 ```
 
-We also can specify the function types with an structure like this:
+We also can specify the function types with a structure like this:
 
 ```typescript
 let combine: (a: number, b: number) => number;
 ```
 
-Who tell us, a function that receive 2 numbers and return another number.
+Who tells us, a function that receives 2 numbers and returns another number.
 
 ### Unknown Type
 
-Unknown is like any type, but is more restrictive. We have to check type before put an unknown type into an specific type.
+The unknown is like any type but is more restrictive. We have to check type before putting an unknown type into a specific type.
 
 ### Never Type
 
-It's used to functions in functions that never return a value, like functions that throw an error or with contains an infinity loop.
+It's used to functions in functions that never return a value, like functions that throw an error or contains an infinity loop.
 
 ## TypeScript Compiler
 
-To get away from `tsc index.ts` everytime we can use watch mode `tsc index.ts -w`.
+To get away from `tsc index.ts` every time we can use watch mode `tsc index.ts -w`.
 We also can init a TypeScript project a once:
 
 `tsc --init`
@@ -182,4 +182,4 @@ And then use:
 
 `tsc -w`
 
-To TypeScript recompile everyfile when it changes.
+To TypeScript recompile every file when it changes.
