@@ -69,6 +69,34 @@ function printEmployeeInformation(emp: UnknownEmployee) {
 
 ## Discriminated Unions
 
+It's a pattern with we can use when we working with union types that makes implementing type guard easier, It's available when we working with object types.
+We have a common property to check diferents type objects;
+
+```typescript
+interface Bird {
+  type: "bird";
+  flyingSpeed: number;
+}
+interface Horse {
+  type: "horse";
+  runningSpeed: number;
+}
+type Animal = Bird | Horse;
+
+function moveAnimal(animal: Animal) {
+  let speed;
+  switch (animal.type) {
+    case "bird":
+      speed = animal.flyingSpeed;
+      break;
+    case "horse":
+      speed = animal.runningSpeed;
+      break;
+  }
+  console.log("Moving with speed: " + spped);
+}
+```
+
 ## Type Casting
 
 ## Function Overloads
