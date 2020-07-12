@@ -161,3 +161,7 @@ const storedData = userInput ?? 'DEFAULT'; // if is null or undefined, not empty
 
 console.log(storedData)
 ```
+
+## Useful Resources & Links
+
+- [https://www.typescriptlang.org/docs/handbook/advanced-types.html](More on advanced types)
